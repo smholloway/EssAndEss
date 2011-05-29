@@ -1,4 +1,10 @@
-$(document).ready(function() { 
+$(document).ready(function() {
+  $('#vote-history').hide();
+  $('#vote-history-toggle').click(function() {
+    $('#vote-history').toggle(400);
+      return false;
+    });
+  
   $('#loadingDiv')
     .hide()  // hide it initially
     .ajaxStart(function() {

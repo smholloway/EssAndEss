@@ -74,9 +74,7 @@ jQuery.Flash.prototype.onTimeout = function() {
 
 jQuery.Flash.prototype.show = function() {
     this.element.fadeIn(1000);
-    
-    if ( ! this.element.hasClass('error') )
-        this.timeout = window.setTimeout(function(){ jQuery.flash.onTimeout() }, 5000);
+    this.timeout = window.setTimeout(function(){ jQuery.flash.onTimeout() }, 5000);
 }
 
 jQuery.Flash.prototype.hide = function() {
