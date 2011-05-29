@@ -1,0 +1,9 @@
+.bundle
+*.bak
+db/*.sqlite3
+log/*.log
+*.log
+tmp/**/*
+*.swp
+.rvmrc
+*.zip
