@@ -1,5 +1,4 @@
 <?php
-
 // smc: helper function to pull N indices from [0, $count-1] at random
 function getRandIndices($count, $n = 3) {
   $indices = array();
@@ -12,5 +11,4 @@ function getRandIndices($count, $n = 3) {
   }
   return $indices;
 }
-
 ?>

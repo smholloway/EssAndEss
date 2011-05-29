@@ -1,10 +1,10 @@
 <?php
-
 require_once 'facebook-php-sdk/src/facebook.php';
 require_once 'fb-app-instance.php'; // softlink to either *-dev.php or *-prod.php
 require_once 'fb-auth-check.php'; // authenticates user, sets $user, $user_profile
 require_once 'fb-helpers.php';
 require_once 'fb-fql.php';
+require_once 'fb-db.php';
 
 // smc: closure for gender based array_filter
 function createGenderCheck($g, $fb) {
@@ -110,5 +110,6 @@ if ($user) {
     <?php endif ?>
     
     <div id="flash"></div>
+    
   </body>
 </html>

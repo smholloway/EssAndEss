@@ -1,5 +1,4 @@
 <?php
-
 // smc: fql helper to efficiently get gender info for all friends at once
 // array is keyed by user id
 function getFriendsGender($fb) {
@@ -17,5 +16,4 @@ function getFriendsGender($fb) {
   
   return $gender_by_id;
 }
-
 ?>
