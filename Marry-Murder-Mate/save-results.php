@@ -1,6 +1,11 @@
 <?php
   require_once 'fb-auth-check.php'; // authenticates user, sets $user, $user_profile
   
+  // make sure ids are ints
+  if (!is_numeric($_POST['user1_id']) || !is_numeric($_POST['user2_id']) || !is_numeric($_POST['user3_id'])) {
+    exit("User ids invalid!");
+  }
+  
   // check votes
   if (!isset($_POST['group1']) || !isset($_POST['group2']) || !isset($_POST['group3'])) {
     exit("Missing votes for each person!");
@@ -20,4 +25,6 @@
   }
   
   print_r($_POST);
+  
+  // TODO: save
 ?>
