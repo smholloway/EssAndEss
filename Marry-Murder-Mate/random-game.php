@@ -44,6 +44,7 @@ if ($user) {
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <title>Marry Murder Mate</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   </head>
   <body>
     <h1>Marry Murder Mate</h1>
