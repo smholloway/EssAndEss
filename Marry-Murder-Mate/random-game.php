@@ -53,42 +53,50 @@ if ($user) {
       <input type="radio" name="gender" value="male" <?php echo isset($_GET['gender']) && $_GET['gender'] == "male" ? "checked" : ""; ?> />Male 
       <input type="radio" name="gender" value="female" <?php echo isset($_GET['gender']) && $_GET['gender'] == "female" ? "checked" : ""; ?> />Female 
       <input type="radio" name="gender" value="any" <?php echo !isset($_GET['gender']) || $_GET['gender'] == "any" ? "checked" : ""; ?> />Any
-      <br />
-      <input type="submit" value="Submit" />
+      <input type="submit" value="New Game" />
     </form>
-
+    <br />
+    
     <?php if ($user): ?>
 
       <?php if ($friends): ?>
         <?php
           shuffle($friends);
-          $indices = getRandIndices($friends_count); // 3
+          $indices = getRandIndices($friends_count); // 3 by default
         ?>
-        <table>
-          <tr>
-            <td><?php echo $friends[$indices[0]]['name'] ?></td>
-            <td><?php echo $friends[$indices[1]]['name'] ?></td>
-            <td><?php echo $friends[$indices[2]]['name'] ?></td>
-          </tr>
-          <tr>
-            <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[0]]['id']; ?>/picture"></td>
-            <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[1]]['id']; ?>/picture"></td>
-            <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[2]]['id']; ?>/picture"></td>
-          </tr>
-        </table>
-      <?php endif ?>
-
-      <?php if ($friends): ?>
-        <h4>Your friends of the selected gender (<?php echo $friends_count; ?>):</h4>
-        <?php
-          foreach ($friends as $f) {
-            $name = $f['name'];
-            $id = $f['id'];
-        ?>
-            <?php echo $name; ?><br />
-        <?php
-          }
-        ?>
+        <form name="results" action="save-results.php" method="post">
+          <input type="hidden" name="user1_id" value="<?php echo $friends[$indices[0]]['id'] ?>">
+          <input type="hidden" name="user2_id" value="<?php echo $friends[$indices[1]]['id'] ?>">
+          <input type="hidden" name="user3_id" value="<?php echo $friends[$indices[2]]['id'] ?>">
+          <table>
+            <tr>
+              <td><?php echo $friends[$indices[0]]['name'] ?></td>
+              <td><?php echo $friends[$indices[1]]['name'] ?></td>
+              <td><?php echo $friends[$indices[2]]['name'] ?></td>
+            </tr>
+            <tr>
+              <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[0]]['id']; ?>/picture"></td>
+              <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[1]]['id']; ?>/picture"></td>
+              <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[2]]['id']; ?>/picture"></td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="group1" value="Marry">Marry</td>
+              <td><input type="radio" name="group2" value="Marry">Marry</td>
+              <td><input type="radio" name="group3" value="Marry">Marry</td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="group1" value="Murder">Murder</td>
+              <td><input type="radio" name="group2" value="Murder">Murder</td>
+              <td><input type="radio" name="group3" value="Murder">Murder</td>
+            </tr>
+            <tr>
+              <td><input type="radio" name="group1" value="Mate">Mate</td>
+              <td><input type="radio" name="group2" value="Mate">Mate</td>
+              <td><input type="radio" name="group3" value="Mate">Mate</td>
+            </tr>
+          </table>
+          <input type="submit" value="Save Selections" />
+        </form>
       <?php endif ?>
       
     <?php endif ?>
