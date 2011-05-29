@@ -46,17 +46,20 @@ $(document).ready(function() {
                      'group1='+group1+'&'+
                      'group2='+group2+'&'+
                      'group3='+group3;
-      alert('query = '+ query);
+      //alert('query = '+ query);
       $.ajax({
         type: 'POST',
         data: query,
         url: 'save-results.php',
         success: function(data) {
-          alert('Save was performed.');
+          //alert('Save was performed.');
+          $('#results_submit').attr('disabled', 'disabled');
+          jQuery.flash.success('Success', 'Your vote was saved!');
         }
       });
     } else {
-      alert('Please select Marry, Murder, or Mate for each person')
+      jQuery.flash.error('Error', 'Please select Marry, Murder, or Mate for each person.');
+      //alert('Please select Marry, Murder, or Mate for each person')
     }
     return false;
   });

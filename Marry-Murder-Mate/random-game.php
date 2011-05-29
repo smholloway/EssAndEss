@@ -47,6 +47,7 @@ if ($user) {
     <link href="main.css" media="screen" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="application.js"></script>
+		<script type="text/javascript" src="jquery.flash.js"></script>
   </head>
   <body>
     <h1>Marry Murder Mate</h1>
@@ -102,47 +103,12 @@ if ($user) {
             </div>
           </div>
           <br style="clear:both"/>
-          <input type="submit" value="Save Selections" />
-        </form>
-        
-        
-        
-                
-        <form id="result" name="results" action="save-results.php" method="post" style="display:none">
-          <input type="hidden" name="user1_id" value="<?php echo $friends[$indices[0]]['id'] ?>">
-          <input type="hidden" name="user2_id" value="<?php echo $friends[$indices[1]]['id'] ?>">
-          <input type="hidden" name="user3_id" value="<?php echo $friends[$indices[2]]['id'] ?>">
-          <table>
-            <tr>
-              <td><?php echo $friends[$indices[0]]['name'] ?></td>
-              <td><?php echo $friends[$indices[1]]['name'] ?></td>
-              <td><?php echo $friends[$indices[2]]['name'] ?></td>
-            </tr>
-            <tr>
-              <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[0]]['id']; ?>/picture"></td>
-              <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[1]]['id']; ?>/picture"></td>
-              <td><img src="https://graph.facebook.com/<?php echo $friends[$indices[2]]['id']; ?>/picture"></td>
-            </tr>
-            <tr>
-              <td><input type="radio" name="group1" value="Marry">Marry</td>
-              <td><input type="radio" name="group2" value="Marry">Marry</td>
-              <td><input type="radio" name="group3" value="Marry">Marry</td>
-            </tr>
-            <tr>
-              <td><input type="radio" name="group1" value="Murder">Murder</td>
-              <td><input type="radio" name="group2" value="Murder">Murder</td>
-              <td><input type="radio" name="group3" value="Murder">Murder</td>
-            </tr>
-            <tr>
-              <td><input type="radio" name="group1" value="Mate">Mate</td>
-              <td><input type="radio" name="group2" value="Mate">Mate</td>
-              <td><input type="radio" name="group3" value="Mate">Mate</td>
-            </tr>
-          </table>
-          <input type="submit" value="Save Selections" />
+          <input id="results_submit" type="submit" value="Save Selections" />
         </form>
       <?php endif ?>
       
     <?php endif ?>
+    
+    <div id="flash"></div>
   </body>
 </html>

@@ -28,3 +28,17 @@ body {
   font-size: 11px;
   padding-left: 22px;
 }
+#flash { font-size: 0.9em; width: 500px; z-index: 1000; background-color: #569; color: white; border-bottom: 1px solid #000; }
+#flash, #flash * { cursor: pointer; }
+#flash .yui-b { padding: 3px; text-align: center; }
+#flash .yui-b>* { }
+#flash label { display: block; text-align: right; font-weight: bold; text-transform: capitalize; }
+#flash label:after { content: ':'; }
+#flash.subtle { background-color: #444; color: white; }
+#flash.subtle:hover { background-color: #222; }
+#flash.warning { background-color: #ff0; color: black; }
+#flash.warning:hover { background-color: #ff8; }
+#flash.success { background-color: #595; }
+#flash.success:hover { background-color: #7b7; }
+#flash.failure, #flash.error { background-color: #800; }
+#flash.failure:hover, #flash.error:hover { background-color: #a00; }
