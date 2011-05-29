@@ -44,12 +44,14 @@ if ($user) {
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <title>Marry Murder Mate</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <link href="main.css" media="screen" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="application.js"></script>
   </head>
   <body>
     <h1>Marry Murder Mate</h1>
 
-    <form name="input" action="random-game.php" method="get">
+    <form id="game" name="game" action="random-game.php" method="get">
       <input type="radio" name="gender" value="male" <?php echo isset($_GET['gender']) && $_GET['gender'] == "male" ? "checked" : ""; ?> />Male 
       <input type="radio" name="gender" value="female" <?php echo isset($_GET['gender']) && $_GET['gender'] == "female" ? "checked" : ""; ?> />Female 
       <input type="radio" name="gender" value="any" <?php echo !isset($_GET['gender']) || $_GET['gender'] == "any" ? "checked" : ""; ?> />Any
@@ -64,7 +66,49 @@ if ($user) {
           shuffle($friends);
           $indices = getRandIndices($friends_count); // 3 by default
         ?>
-        <form name="results" action="save-results.php" method="post">
+        
+        <div id="loadingDiv"><img src="loading.gif"></div>
+        
+        <form id="results" name="results" action="save-results.php" method="post">
+          <input type="hidden" id="user1_id" name="user1_id" value="<?php echo $friends[$indices[0]]['id'] ?>">
+          <input type="hidden" id="user2_id" name="user2_id" value="<?php echo $friends[$indices[1]]['id'] ?>">
+          <input type="hidden" id="user3_id" name="user3_id" value="<?php echo $friends[$indices[2]]['id'] ?>">
+
+          <div class="person">
+            <div class="name"><?php echo $friends[$indices[0]]['name'] ?></div>
+            <div class="pic"><img src="https://graph.facebook.com/<?php echo $friends[$indices[0]]['id']; ?>/picture?type=square"></div>
+            <div class="vote" id="group1">
+              <input type="radio" name="group1" value="Marry">Marry<br/>
+              <input type="radio" name="group1" value="Murder">Murder<br/>
+              <input type="radio" name="group1" value="Mate">Mate<br/>
+            </div>
+          </div>
+          <div class="person">
+            <div class="name"><?php echo $friends[$indices[1]]['name'] ?></div>
+            <div class="pic"><img src="https://graph.facebook.com/<?php echo $friends[$indices[1]]['id']; ?>/picture?type=square"></div>
+            <div class="vote" id="group2">
+              <input type="radio" name="group2" value="Marry">Marry<br/>
+              <input type="radio" name="group2" value="Murder">Murder<br/>
+              <input type="radio" name="group2" value="Mate">Mate<br/>
+            </div>
+          </div>        
+          <div class="person">
+            <div class="name"><?php echo $friends[$indices[2]]['name'] ?></div>
+            <div class="pic"><img src="https://graph.facebook.com/<?php echo $friends[$indices[2]]['id']; ?>/picture?type=square"></div>
+            <div class="vote" id="group3">
+              <input type="radio" name="group3" value="Marry">Marry<br/>
+              <input type="radio" name="group3" value="Murder">Murder<br/>
+              <input type="radio" name="group3" value="Mate">Mate<br/>
+            </div>
+          </div>
+          <br style="clear:both"/>
+          <input type="submit" value="Save Selections" />
+        </form>
+        
+        
+        
+                
+        <form id="result" name="results" action="save-results.php" method="post" style="display:none">
           <input type="hidden" name="user1_id" value="<?php echo $friends[$indices[0]]['id'] ?>">
           <input type="hidden" name="user2_id" value="<?php echo $friends[$indices[1]]['id'] ?>">
           <input type="hidden" name="user3_id" value="<?php echo $friends[$indices[2]]['id'] ?>">

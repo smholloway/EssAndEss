@@ -1,0 +1,30 @@
+body {
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;  
+}
+.person {
+  float: left;
+  width: 100px;
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+}
+.name {
+  color: #3B5998;
+  font-size: 11px;
+  margin: 2px auto;
+  height: 40px;
+  overflow: hidden;
+}
+.pic {
+  height: 50px;
+  overflow: hidden;
+  margin: 2px auto;
+}
+.pic img {
+  width: 50px;
+}
+.vote {
+  text-align: left;
+  font-size: 11px;
+  padding-left: 22px;
+}
