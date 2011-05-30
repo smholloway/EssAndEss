@@ -124,6 +124,7 @@ if ($user) {
     <div id="footer">
       <p>Copyright &copy; 2011. All rights reserved.</p>
       <p>*This is a game. We do not condone violence. By using this service you have absolved the creators of all liability.</p>
+      <p>Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
     </div>
     </div>
   </body>

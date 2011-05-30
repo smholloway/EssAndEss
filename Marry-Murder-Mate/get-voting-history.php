@@ -6,9 +6,6 @@ require_once 'fb-helpers.php';
 require_once 'fb-fql.php';
 require_once 'fb-db.php';
 
-?>
-
-<?php
 // populate for fql
 $result = mysql_query("SELECT * FROM mmm_votes WHERE voter_id = $user ORDER BY added DESC LIMIT 25");
 if (mysql_num_rows($result) > 0) {
