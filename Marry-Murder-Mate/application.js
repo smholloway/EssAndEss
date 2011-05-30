@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  window.fbAsyncInit = function() {
+    FB.Canvas.setAutoResize();
+  }
+
   $('#vote-history').hide();
   $('#vote-history-toggle a').click(function() {
     $('#vote-history').toggle(400);
