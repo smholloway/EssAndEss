@@ -1,6 +1,60 @@
 body {
-  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;  
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  color: #333;
 }
+a {
+  color: #3B5998;
+}
+
+#site {
+  width: 360px;
+  margin: auto;
+}
+#header {
+  margin: 10px auto;
+  text-align: center;
+  color: #3B5998;
+}
+#footer {
+  margin: 10px auto;
+  font-size: 11px;
+  font-variant: small-caps;
+  text-align: center;
+}
+#game {
+  margin: auto 30px;
+  font-size: 12px;
+}
+#game input[type="radio"] {
+  margin-left: 30px;
+}
+#game_submit {
+  width: 300px;
+}
+#results_submit {
+  width: 300px;
+  margin-left: 30px;
+}
+input[type="submit"] {
+  color: #000;
+  border: 1px solid #999;
+  border-bottom-color: #888;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  cursor: pointer;
+  display: -moz-inline-box;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: normal !important;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
 .person {
   float: left;
   width: 100px;
@@ -28,6 +82,22 @@ body {
   font-size: 11px;
   padding-left: 22px;
 }
-#flash { font-size: 0.9em; width: 500px; z-index: 1000; background-color: #3B5998; color: white; border-bottom: 1px solid #000; }
-#flash, #flash * { cursor: pointer; }
-#flash .yui-b { padding: 3px; text-align: center; }
+#votes {
+  margin: 10px auto 10px 30px;
+}
+#flash {
+  margin: 5px auto;
+  font-size: 0.9em; 
+  width: 360px; 
+  z-index: 1000; 
+  background-color: #3B5998; 
+  color: white; 
+  border: 1px solid #000; 
+}
+#flash, #flash * { 
+  cursor: pointer; 
+}
+#flash .yui-b { 
+  padding: 3px; 
+  text-align: center; 
+}

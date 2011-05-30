@@ -50,13 +50,17 @@ if ($user) {
 		<script type="text/javascript" src="jquery.flash.js"></script>
   </head>
   <body>
-    <h1>Marry Murder Mate</h1>
+    <div id="site">
+    <div id="header">
+      <h1>Marry Murder Mate*</h1>
+    </div>
 
     <form id="game" name="game" action="random-game.php" method="get">
       <input type="radio" name="gender" value="male" <?php echo isset($_GET['gender']) && $_GET['gender'] == "male" ? "checked" : ""; ?> />Male 
       <input type="radio" name="gender" value="female" <?php echo isset($_GET['gender']) && $_GET['gender'] == "female" ? "checked" : ""; ?> />Female 
       <input type="radio" name="gender" value="any" <?php echo !isset($_GET['gender']) || $_GET['gender'] == "any" ? "checked" : ""; ?> />Any
-      <input type="submit" value="New Game" />
+      <br/>
+      <input id="game_submit" type="submit" value="New Game" />
     </form>
     <br />
     
@@ -110,21 +114,28 @@ if ($user) {
     <?php endif ?>
     
     <div id="flash"></div>
+
+    <div id="votes">
+      <a href="#" id="vote-history-toggle">Vote History</a>
+      <div id="vote-history">
+        <?php
+        // show users votes TODO: do one massive query for names or save them; make AJAX?
+        $result = mysql_query("SELECT * FROM mmm_votes WHERE voter_id = $user ORDER BY added DESC");
+        while ($row = mysql_fetch_array($result)) {
+          echo $row['added'] . ' ';
+          echo $row['user1_id'] . ' => ' . $row['vote1'] . ', ';
+          echo $row['user2_id'] . ' => ' . $row['vote2'] . ', ';
+          echo $row['user3_id'] . ' => ' . $row['vote3'];
+          echo "<br />";
+        }
+        ?>
+      </div>
+    </div>
     
-    <br />
-    <a href="#" id="vote-history-toggle">Vote History</a>
-    <div id="vote-history">
-      <?php
-      // show users votes TODO: do one massive query for names or save them; make AJAX?
-      $result = mysql_query("SELECT * FROM mmm_votes WHERE voter_id = $user ORDER BY added DESC");
-      while ($row = mysql_fetch_array($result)) {
-        echo $row['added'] . ' ';
-        echo $row['user1_id'] . ' => ' . $row['vote1'] . ', ';
-        echo $row['user2_id'] . ' => ' . $row['vote2'] . ', ';
-        echo $row['user3_id'] . ' => ' . $row['vote3'];
-        echo "<br />";
-      }
-      ?>
+    <div id="footer">
+      <p>Copyright &copy; 2011. All rights reserved.</p>
+      <p>*This is a game. We do not condone violence. By using this service you have absolved the creators of all liability.</p>
+    </div>
     </div>
   </body>
 </html>
