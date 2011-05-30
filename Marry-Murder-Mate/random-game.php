@@ -118,7 +118,6 @@ if ($user) {
     <div id="votes">
       <div id="vote-history-toggle"><a href="#">&plusmn; Vote History</a></div>
       <div id="vote-history" style="width: 500px; padding: 0; margin: 0;">
-
       </div>
     </div>
     
