@@ -86,7 +86,10 @@ input[type="submit"] {
   padding-left: 22px;
 }
 #votes {
-  margin: 10px auto 10px 30px;
+  margin: 10px auto 10px;
+}
+#vote-history-toggle {
+  text-align: center;
 }
 #flash {
   margin: 5px auto;

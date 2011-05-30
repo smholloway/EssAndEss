@@ -1,7 +1,17 @@
 $(document).ready(function() {
   $('#vote-history').hide();
-  $('#vote-history-toggle').click(function() {
+  $('#vote-history-toggle a').click(function() {
     $('#vote-history').toggle(400);
+    if ($('#vote-history').html().indexOf("person") < 0) {
+      $.ajax({
+        type: 'POST',
+        url: 'get-voting-history.php',
+        success: function(data) {
+          //alert('Save was performed.');
+          $('#vote-history').html(data);
+        }
+      });
+    }
     return false;
   });
   
@@ -76,8 +86,10 @@ $(document).ready(function() {
   
   function load_new_game() {
     var selected = $('#game :checked').val();
+    window.location.href = "?gender=" + selected;
+    //$('body').load('?gender='+selected);
     //alert (selected);
-    $.ajax({
+    /*$.ajax({
       type: 'GET',
       data: 'gender='+selected,
       url: 'random-game.php',
@@ -86,5 +98,6 @@ $(document).ready(function() {
         //alert('Load was performed.');
       }
     });
+    */
   }
 });
