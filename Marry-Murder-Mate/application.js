@@ -24,8 +24,9 @@ $(document).ready(function() {
     });
 
   $('#game').submit(function() {
-    load_new_game();
-    return false;
+    jQuery.flash.success('Success', 'Loading a new game.');
+    //load_new_game();
+    //return false;
   });
 
   $('#game input[name="gender"]').click(function() {
@@ -55,6 +56,7 @@ $(document).ready(function() {
           //alert('Save was performed.');
           $('#results_submit').attr('disabled', 'disabled');
           jQuery.flash.success('Success', 'Your vote was saved!');
+          location.reload( true );
         }
       });
     } else {

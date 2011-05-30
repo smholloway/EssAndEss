@@ -21,12 +21,15 @@ a {
   font-variant: small-caps;
   text-align: center;
 }
+#loadingDiv img {
+  margin-left: 80px;
+}
 #game {
   margin: auto 30px;
   font-size: 12px;
 }
 #game input[type="radio"] {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 #game_submit {
   width: 300px;
