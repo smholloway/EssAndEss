@@ -1,5 +1,5 @@
 <?php
-$con = mysql_connect("localhost", "root", "mysql4ALL!");
+$con = mysql_connect("localhost", "root", "");
 if (!$con) {
   die('Could not connect to DB: ' . mysql_error());
 }

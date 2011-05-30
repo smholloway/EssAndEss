@@ -124,29 +124,47 @@ if ($user) {
       <div id="footer">
         <p>Copyright &copy; 2011. All rights reserved.</p>
         <p>*This is a game. We do not condone violence. By using this service you have absolved the creators of all liability.</p>
+        <p>Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
       </div>
     
       <br/>
       
-      <div id="sda-backwards">
-        <script type="text/javascript"><!--
-        google_ad_client = "ca-pub-2003017988956692";
-        /* large rectangle */
-        google_ad_slot = "6317581198";
-        google_ad_width = 336;
-        google_ad_height = 280;
-        //-->
-        </script>
-        <script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
+      <!-- AddThis Button BEGIN -->
+      <div class="addthis_toolbox addthis_default_style" style="margin-left: 30px">
+        <span style="float:left; color: #333; font-size: 11px;">Share the fun: </span>
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_preferred_3"></a>
+        <a class="addthis_button_preferred_4"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
+      </div>
+      <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4de41719301eed24"></script>
+      <!-- AddThis Button END -->
       
+      <br/>
+      <br/>
+      
+      <div id="sda-backwards">
         <script type="text/javascript"><!--
         google_ad_client = "ca-pub-2003017988956692";
         /* wide banner */
         google_ad_slot = "9559483834";
         google_ad_width = 468;
         google_ad_height = 60;
+        //-->
+        </script>
+        <script type="text/javascript"
+        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+        
+        <script type="text/javascript"><!--
+        google_ad_client = "ca-pub-2003017988956692";
+        /* large rectangle */
+        google_ad_slot = "6317581198";
+        google_ad_width = 336;
+        google_ad_height = 280;
         //-->
         </script>
         <script type="text/javascript"

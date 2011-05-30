@@ -1,0 +1,8 @@
+
+Create two symlinks
+(1) The database file containing DB password
+ln -s fb-db.php fb-db-prod.php
+
+(2) The instance file containing API keys
+ln -s fb-app-instance.php fb-app-instance-dev.php
+
