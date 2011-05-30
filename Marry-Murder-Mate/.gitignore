@@ -7,3 +7,4 @@ tmp/**/*
 *.swp
 .rvmrc
 *.zip
+fb-db.php
