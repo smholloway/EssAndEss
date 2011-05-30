@@ -16,6 +16,6 @@ CREATE TABLE mmm_votes (
   INDEX(user1_id),
   INDEX(user2_id),
   INDEX(user3_id)
-) ENGINE = InnoDB;
+);
 
 ALTER TABLE mmm_votes ADD UNIQUE(voter_id, user1_id, user2_id, user3_id);

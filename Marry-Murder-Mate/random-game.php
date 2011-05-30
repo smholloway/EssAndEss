@@ -117,17 +117,48 @@ if ($user) {
 
     <div id="votes">
       <a href="#" id="vote-history-toggle">Vote History</a>
-      <div id="vote-history">
+      <div id="vote-history" style="width: 500px; padding: 0; margin: 0;">
         <?php
-        // show users votes TODO: do one massive query for names or save them; make AJAX?
+        // populate for fql
         $result = mysql_query("SELECT * FROM mmm_votes WHERE voter_id = $user ORDER BY added DESC");
+        $user_ids_all = array();
         while ($row = mysql_fetch_array($result)) {
-          echo $row['added'] . ' ';
-          echo $row['user1_id'] . ' => ' . $row['vote1'] . ', ';
-          echo $row['user2_id'] . ' => ' . $row['vote2'] . ', ';
-          echo $row['user3_id'] . ' => ' . $row['vote3'];
-          echo "<br />";
+          array_push($user_ids_all, $row['user1_id'], $row['user2_id'], $row['user3_id']);
         }
+        $user_ids = array_unique($user_ids_all);
+        $user_names = getNames($facebook, $user_ids);
+        $user_pics = getPictures($facebook, $user_ids);
+        
+        // display
+        mysql_data_seek($result, 0);
+        while ($row = mysql_fetch_array($result)) {
+          ?>
+          <div class="person">
+            <div class="name"><?php echo $user_names[$row['user1_id']]; ?></div>
+            <div class="pic"><img src="<?php echo $user_pics[$row['user1_id']]; ?>"></div>
+            <div style="font-weight: bold; text-align: center;">
+              <?php echo $row['vote1']; ?>
+            </div>
+          </div>
+          <div class="person">
+            <div class="name"><?php echo $user_names[$row['user2_id']]; ?></div>
+            <div class="pic"><img src="<?php echo $user_pics[$row['user2_id']]; ?>"></div>
+            <div style="font-weight: bold; text-align: center;">
+              <?php echo $row['vote2']; ?>
+            </div>
+          </div>
+          <div class="person">
+            <div class="name"><?php echo $user_names[$row['user3_id']]; ?></div>
+            <div class="pic"><img src="<?php echo $user_pics[$row['user3_id']]; ?>"></div>
+            <div style="font-weight: bold; text-align: center;">
+              <?php echo $row['vote3']; ?>
+            </div>
+          </div>
+          <br style="clear:both"/>
+          <?php
+        }
+        
+        mysql_free_result($result)
         ?>
       </div>
     </div>
