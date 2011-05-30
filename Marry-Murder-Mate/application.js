@@ -2,8 +2,8 @@ $(document).ready(function() {
   $('#vote-history').hide();
   $('#vote-history-toggle').click(function() {
     $('#vote-history').toggle(400);
-      return false;
-    });
+    return false;
+  });
   
   $('#loadingDiv')
     .hide()  // hide it initially
@@ -14,28 +14,22 @@ $(document).ready(function() {
       $(this).hide();
     });
     
-    $('#results')
-      .show()  // show it initially
-      .ajaxStart(function() {
-        $(this).hide();
-      })
-      .ajaxStop(function() {
-        $(this).show();
-      });
+  $('#results')
+    .show()  // show it initially
+    .ajaxStart(function() {
+      $(this).hide();
+    })
+    .ajaxStop(function() {
+      $(this).show();
+    });
 
+  $('#game').submit(function() {
+    load_new_game();
+    return false;
+  });
 
   $('#game input[name="gender"]').click(function() {
-    var selected = $('#game :checked').val();
-    //alert (selected);
-    $.ajax({
-      type: 'GET',
-      data: 'gender='+selected,
-      url: 'random-game.php',
-      success: function(data) {
-        $('body').html(data);
-        //alert('Load was performed.');
-      }
-    });
+    load_new_game();
   });
   
   $('#results').submit(function() {
@@ -76,5 +70,19 @@ $(document).ready(function() {
       checked.push($(this).val()); 
     });
     return ((jQuery.inArray("Murder", checked) > -1) && (jQuery.inArray("Marry", checked) > -1) && (jQuery.inArray("Mate", checked) > -1));
+  }
+  
+  function load_new_game() {
+    var selected = $('#game :checked').val();
+    //alert (selected);
+    $.ajax({
+      type: 'GET',
+      data: 'gender='+selected,
+      url: 'random-game.php',
+      success: function(data) {
+        $('body').html(data);
+        //alert('Load was performed.');
+      }
+    });
   }
 });
