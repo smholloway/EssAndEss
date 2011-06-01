@@ -107,3 +107,21 @@ input[type="submit"] {
   padding: 3px; 
   text-align: center; 
 }
+#histogram {
+  margin-top: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+div.progress-container {
+ border: 1px solid #ccc; 
+ width: 100px; 
+ margin: 2px 5px 2px 0; 
+ padding: 1px; 
+ float: left; 
+ background: white;
+}
+
+div.progress-container > div {
+ background-color: #3B5998; 
+ height: 12px
+}

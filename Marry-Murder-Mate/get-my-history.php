@@ -8,13 +8,10 @@ require_once 'fb-db.php';
 
 $user_votes = array();
 
-$fake_user = 7953046;
-//$user = $fake_user;
-
 // populate for fql
-$result1 = mysql_query("SELECT vote1 FROM mmm_votes WHERE user1_id = $user ORDER BY added DESC");
-$result2 = mysql_query("SELECT vote2 FROM mmm_votes WHERE user2_id = $user ORDER BY added DESC");
-$result3 = mysql_query("SELECT vote3 FROM mmm_votes WHERE user3_id = $user ORDER BY added DESC");
+$result1 = mysql_query("SELECT vote1 FROM mmm_votes WHERE user1_id = '$user'");
+$result2 = mysql_query("SELECT vote2 FROM mmm_votes WHERE user2_id = '$user'");
+$result3 = mysql_query("SELECT vote3 FROM mmm_votes WHERE user3_id = '$user'");
 
 if (mysql_num_rows($result1) > 0) {
   while ($row = mysql_fetch_array($result1)) {
@@ -37,23 +34,33 @@ mysql_free_result($result2);
 mysql_free_result($result3);
 
 echo '<div id="histogram">';
+$vote_histogram = array("Marry" => 0, "Murder" => 0, "Mate" => 0);
+$user_vote_count = count($user_votes);
 
-if (count($user_votes) > 0) {
-  $vote_histogram = array("Marry" => 0, "Murder" => 0, "Mate" => 0);
+if ($user_vote_count > 0) {
+  echo "Here is how your friends voted for you ($user_vote_count votes):<br /><br />";
   foreach ($user_votes as $v) {
     $count = $vote_histogram[$v] + 1;
     $vote_histogram[$v] = $count;
   }
 } else {
-  echo 'You have no votes, yet. Get your friends to play and discover your true love potential!';  
+  echo 'You have not received any votes, yet. Get your friends to play and discover your true love potential!';  
 }
 
-  // display
+// display
+if ($user_vote_count > 0) {
   foreach ($vote_histogram as $key => $value) {
-    ?>
-<div id="<?php echo $key; ?>"><?php echo $key.': '.$value; ?></div>
+  ?>
+  <div id="<?php echo $key; ?>">
+    <?php echo $key.': '.$value; ?> <br />
+	  <div class="progress-container" style="width: 100px">          
+      <div style="width: <?php echo ($value / $user_vote_count) * 100; ?>%"></div> 
+    </div>
+  </div>
+  <div style="clear:both;"></div>
   <?php
   }
-  echo '</div>';
+}
+echo '</div>';
 
 ?>
