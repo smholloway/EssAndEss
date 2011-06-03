@@ -44,7 +44,7 @@ if ($user_vote_count > 0) {
     $vote_histogram[$v] = $count;
   }
 } else {
-  echo 'You have not received any votes, yet. Get your friends to play and discover your true love potential!';  
+  echo 'You have not received any votes, yet. Get your friends to play and discover where you stand!';  
 }
 
 // display
