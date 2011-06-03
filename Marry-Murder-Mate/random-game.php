@@ -132,15 +132,8 @@ if ($user) {
         <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, F*ck Marry Kill, or Screw Marry Kill. We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
 
  				<div id="links_to_play">
-					<?php
-    			$hostname = $_SERVER['SERVER_NAME']; 
-          $hostname = str_replace('www.', '', $hostname);
-          if (strcmp($hostname, 'pairstream.com')) {
-          ?>
     			<a href="http://pairstream.com/random-game.php" target="_blank">Pairstream.com - Marry Murder Mate</a>
-    			<?php } else { ?>
     			<a href="http://apps.facebook.com/marry-murder-mate/">Facebook.com - Marry Murder Mate</a>
-    			<?php } ?>
 				</div>
       </div>
     
