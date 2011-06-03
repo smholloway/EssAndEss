@@ -132,8 +132,15 @@ if ($user) {
         <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, F*ck Marry Kill, or Screw Marry Kill. We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
 
  				<div id="links_to_play">
-					<a href="http://pairstream.com/random-game.php">Play on Pairstream</a> | 
-					<a href="http://apps.facebook.com/marry-murder-mate/">Play on Facebook</a>
+					<?php
+    			$hostname = $_SERVER['SERVER_NAME']; 
+          $hostname = str_replace('www.', '', $hostname);
+          if (strcmp($hostname, 'pairstream.com')) {
+          ?>
+    			<a href="http://pairstream.com/random-game.php" target="_blank">Pairstream.com - Marry Murder Mate</a>
+    			<?php } else { ?>
+    			<a href="http://apps.facebook.com/marry-murder-mate/">Facebook.com - Marry Murder Mate</a>
+    			<?php } ?>
 				</div>
       </div>
     
@@ -157,9 +164,9 @@ if ($user) {
 
 			<div id="extra">
 			The best facebook game ever! This game will cause no harm! It will not cause a heart attack, AIDS, or cancer (Mesothelioma, Leukemia, Carcinoma, Kaposi Sarcoma, Atypical Teratoid, Rhabdoid Tumor, etc). There's nothing bad except the risk associated with computers, mobile devices, or monitors. Pairstream Software is two highly educated web developers with skills including Photoshop, Illustrator, design, Ruby, Java, C# (C Sharp), C, C++, Python, PHP, CSS, HTML, JavaScript, Rails, Yii, Erlang, RESTful APIs, SQL, ORMs, and more. We like to do cool stuff!
+      
 			<a href="http://pairstream.com/random-game.php">Pairstream - Marry Murder Mate</a>
 			<a href="http://apps.facebook.com/marry-murder-mate/">Facebook - Marry Murder Mate</a>
-
 			</div>
 
       <br/>
