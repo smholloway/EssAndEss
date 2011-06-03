@@ -52,7 +52,7 @@ if ($user) {
   <body>
     <div id="site">
       <div id="header">
-        <h1>Marry Murder Mate*</h1>
+      	<h1>Marry Murder Mate*</h1>
       </div>
 
       <form id="game" name="game" action="random-game.php" method="get">
@@ -128,32 +128,38 @@ if ($user) {
       </div>
     
       <div id="footer">
-        <p>Copyright &copy; 2011. All rights reserved.</p>
-        <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, Fuck Marry Kill, or Screw Marry Kill.</p>
-				<p>We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
-        <p>Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
+        <p>Copyright &copy; 2011. Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
+        <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, Fuck Marry Kill, or Screw Marry Kill. We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
+
+ 				<div id="links_to_play">
+					<a href="http://pairstream.com/random-game.php">Play on Pairstream</a> | 
+					<a href="http://apps.facebook.com/marry-murder-mate/">Play on Facebook</a>
+				</div>
       </div>
     
-      <br/>
-      
-      <!-- AddThis Button BEGIN -->
-      <div class="addthis_toolbox addthis_default_style" style="margin-left: 30px">
-        <span style="float:left; color: #333; font-size: 11px;">Share the fun: </span>
-        <a class="addthis_button_preferred_1"></a>
-        <a class="addthis_button_preferred_2"></a>
-        <a class="addthis_button_preferred_3"></a>
-        <a class="addthis_button_preferred_4"></a>
-        <a class="addthis_button_compact"></a>
-        <a class="addthis_counter addthis_bubble_style"></a>
-      </div>
-      <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
-      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4de41719301eed24"></script>
-      <!-- AddThis Button END -->
+			<div id="addthis">
+      	<!-- AddThis Button BEGIN -->
+      	<div class="addthis_toolbox addthis_default_style">
+        	<span style="float:left; color: #333; font-weight: bold; font-size: 11px;">Share the fun: &nbsp;</span>
+        	<a class="addthis_button_preferred_1"></a>
+        	<a class="addthis_button_preferred_2"></a>
+        	<a class="addthis_button_preferred_3"></a>
+        	<a class="addthis_button_preferred_4"></a>
+        	<a class="addthis_button_compact"></a>
+        	<a class="addthis_counter addthis_bubble_style"></a>
+      	</div>
+      	<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+      	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4de41719301eed24"></script>
+      	<!-- AddThis Button END -->
+			</div>
       
       <br/>
 
 			<div id="extra">
 			The best facebook game ever! This game will cause no harm! It will not cause a heart attack, AIDS, or cancer (Mesothelioma, Leukemia, Carcinoma, Kaposi Sarcoma, Atypical Teratoid, Rhabdoid Tumor, etc). There's nothing bad except the risk associated with computers, mobile devices, or monitors. Pairstream Software is two highly educated web developers with skills including Photoshop, Illustrator, design, Ruby, Java, C# (C Sharp), C, C++, Python, PHP, CSS, HTML, JavaScript, Rails, Yii, Erlang, RESTful APIs, SQL, ORMs, and more. We like to do cool stuff!
+			<a href="http://pairstream.com/random-game.php">Pairstream - Marry Murder Mate</a>
+			<a href="http://apps.facebook.com/marry-murder-mate/">Facebook - Marry Murder Mate</a>
+
 			</div>
 
       <br/>
