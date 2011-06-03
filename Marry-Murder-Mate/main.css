@@ -38,6 +38,10 @@ a {
   width: 300px;
   margin-left: 30px;
 }
+#extra {
+	font-size: 4px;
+	color: #FFF;
+}
 input[type="submit"] {
   color: #000;
   border: 1px solid #999;

@@ -90,16 +90,24 @@ $(document).ready(function() {
   
   function load_new_game() {
     var selected = $('#game :checked').val();
-    window.location.href = "?gender=" + selected;
-    //$('body').load('?gender='+selected);
-    //alert (selected);
-    /*$.ajax({
+		var url = window.location.href;
+		if (url.indexOf("gender") == -1) {
+			if (url.indexOf("?") == -1) {
+				window.location.href = url + "?gender=" + selected;
+			} else {
+				window.location.href = url + "&gender=" + selected;
+			}
+		} else {
+			url = url.replace( new RegExp("any|female|male", "gi"), selected);
+    	window.location.href = url;
+		}
+    /*
+		$.ajax({
       type: 'GET',
       data: 'gender='+selected,
       url: 'random-game.php',
       success: function(data) {
         $('body').html(data);
-        //alert('Load was performed.');
       }
     });
     */

@@ -122,14 +122,15 @@ if ($user) {
       </div>
 
       <div id="votes">
-        <div id="vote-history-toggle"><a href="#">&plusmn; Vote History</a></div>
+        <div id="vote-history-toggle"><a href="#">&plusmn; Your Voting History</a></div>
         <div id="vote-history" style="width: 500px; padding: 0; margin: 0;">
         </div>
       </div>
     
       <div id="footer">
         <p>Copyright &copy; 2011. All rights reserved.</p>
-        <p>*This is a game. We do not condone violence. By using this service you have absolved the creators of all liability.</p>
+        <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, Fuck Marry Kill, or Screw Marry Kill.</p>
+				<p>We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
         <p>Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
       </div>
     
@@ -150,6 +151,11 @@ if ($user) {
       <!-- AddThis Button END -->
       
       <br/>
+
+			<div id="extra">
+			The best facebook game ever! This game will cause no harm! It will not cause a heart attack, AIDS, or cancer (Mesothelioma, Leukemia, Carcinoma, Kaposi Sarcoma, Atypical Teratoid, Rhabdoid Tumor, etc). There's nothing bad except the risk associated with computers, mobile devices, or monitors. Pairstream Software is two highly educated web developers with skills including Photoshop, Illustrator, design, Ruby, Java, C# (C Sharp), C, C++, Python, PHP, CSS, HTML, JavaScript, Rails, Yii, Erlang, RESTful APIs, SQL, ORMs, and more. We like to do cool stuff!
+			</div>
+
       <br/>
       
       <div id="sda-backwards">
