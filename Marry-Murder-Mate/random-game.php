@@ -129,7 +129,7 @@ if ($user) {
     
       <div id="footer">
         <p>Copyright &copy; 2011. Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
-        <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, Fuck Marry Kill, or Screw Marry Kill. We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
+        <p>*This is a game! It is also known as Murder Marry Mate, Mate Marry Murder, F*ck Marry Kill, or Screw Marry Kill. We do not condone violence. By using this service you accept all responsibility and absolve the creators of all liability.</p>
 
  				<div id="links_to_play">
 					<a href="http://pairstream.com/random-game.php">Play on Pairstream</a> | 
