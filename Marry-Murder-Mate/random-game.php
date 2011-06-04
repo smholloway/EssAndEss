@@ -126,6 +126,26 @@ if ($user) {
         <div id="vote-history" style="width: 500px; padding: 0; margin: 0;">
         </div>
       </div>
+      
+      <div style="text-align: center; font-size: 0.9em;">
+        <div id="fb-root"></div>
+          <script src="http://connect.facebook.net/en_US/all.js"></script>
+          <script>
+             FB.init({ 
+                appId:<?php echo "'" . $facebook->getAppId() . "'"; ?>,
+                cookie:true, status:true, xfbml:true 
+             });
+            function publishToWall() {
+               FB.ui({method: 'feed', 
+                  message: 'Check out this great new game I found: Marry Murder Mate.',
+                  link: 'http://apps.facebook.com/marry-murder-mate/',
+                  name: 'Marry Murder Mate',
+                  caption: 'The hottest Facebook game!'
+               });
+            }
+          </script>
+          <a onclick="publishToWall(); return false;" href="#">Publish to wall</a>
+      </div>
     
       <div id="footer">
         <p>Copyright &copy; 2011. Questions or comments? <a href="mailto:marry.murder.mate@gmail.com">Contact Us</a></p>
