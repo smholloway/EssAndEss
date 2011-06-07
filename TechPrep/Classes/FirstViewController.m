@@ -3,8 +3,7 @@
 //  TechPrep
 //
 //  Created by Shayne Czyzewski on 6/6/11.
-//  Copyright 2011 University of Texas at Austin. All rights reserved.
-//
+
 
 #import "FirstViewController.h"
 #import "Helpers.h"
@@ -47,6 +46,7 @@
 	}
 	else {
 		// we already have the params on there so quick fucking with the URL and send it...
+		//NSLog([[request	URL] absoluteString]);
 		return YES;
 	}
 }
