@@ -35,19 +35,10 @@
 	}
 	
 	NSURL* newUrl = [NSURL URLWithString:[[request.URL absoluteString] stringByAppendingString:ending]];
+	[modifiableRequest setURL:newUrl];
 	
-	// Set HTTP method to POST
-    //[modifiableRequest setHTTPMethod:@"POST"];
-    // Set up the parameters to send
-    //NSString* paramDataString = [Helpers getExtraParams];
-    //NSLog(@"%s - paramDataString: %@", __FUNCTION__, paramDataString);
-    // Encode the parameters to default for NSMutableURLRequest
-    //NSData* paramData = [paramDataString dataUsingEncoding:NSUTF8StringEncoding];
-    // Set the NSMutableURLRequest body data
-    //[modifiableRequest setHTTPBody: paramData];
-	
-	NSURL* url = request.URL;
-	NSLog([newUrl absoluteString]);
+	//NSURL* url = request.URL;
+	//NSLog([url absoluteString]);
 	return YES;
 }
 

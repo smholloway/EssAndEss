@@ -13,7 +13,7 @@
 @implementation Helpers
 
 + (NSString*)getExtraParams {
-	NSString* salt = @"234j5gakli2l3k4j5apiosdfj098yasdf"; // some random string
+	NSString* salt = @"234j5gakli2l3k4j5apiosdfj098yasdf!"; // some random string
 	NSString* product = @"java"; // pass in URL
 	int epochInt = (int)[[NSDate date] timeIntervalSince1970];
 	NSString* epochString = [NSString stringWithFormat:@"%d", epochInt]; // pass in URL
