@@ -21,25 +21,34 @@
 
 
 - (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType {
-	NSMutableURLRequest* modifiableRequest = (NSMutableURLRequest*) request;
+	// check if request has already been modified
+	NSString* searchForMe = @"&product=";
+	NSRange range = [[request.URL absoluteString] rangeOfString:searchForMe];
+	bool append = (range.location == NSNotFound);
 	
-	NSString* paramDataString = [Helpers getExtraParams];
-	
-	NSArray* parameters = [[request.URL query] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"=&"]];
-	NSString* ending = nil;
-	if ([parameters count] > 0) {
-		ending = [@"&" stringByAppendingString:paramDataString];
+	if (append) {
+		// we do not have the params on there so add them...
+		NSMutableURLRequest* modifiableRequest = [request mutableCopy];
+		NSString* paramDataString = [Helpers getExtraParams];
+		NSArray* parameters = [[request.URL query] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"=&"]];
+		NSString* ending = nil;
+		if ([parameters count] > 0) {
+			ending = [@"&" stringByAppendingString:paramDataString];
+		}
+		else {
+			ending = [@"?" stringByAppendingString:paramDataString];
+		}
+		
+		NSURL* newUrl = [NSURL URLWithString:[[request.URL absoluteString] stringByAppendingString:ending]];
+		[modifiableRequest setURL:newUrl];
+		
+		[webView loadRequest:modifiableRequest];
+		return NO; // don't send this request, use modified request above
 	}
 	else {
-		ending = [@"?" stringByAppendingString:paramDataString];
+		// we already have the params on there so quick fucking with the URL and send it...
+		return YES;
 	}
-	
-	NSURL* newUrl = [NSURL URLWithString:[[request.URL absoluteString] stringByAppendingString:ending]];
-	[modifiableRequest setURL:newUrl];
-	
-	//NSURL* url = request.URL;
-	//NSLog([url absoluteString]);
-	return YES;
 }
 
 
