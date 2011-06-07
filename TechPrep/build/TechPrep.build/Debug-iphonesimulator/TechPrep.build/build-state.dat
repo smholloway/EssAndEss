@@ -1,20 +1,20 @@
 TTechPrep
 v7
 r0
-t329154966.798934
+t329156730.889414
 cCheck dependencies
-cProcessInfoPlistFile /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist TechPrep-Info.plist
-cCompileXIB /Users/shayne/Desktop/TechPrep/MainWindow.xib
-cCompileXIB /Users/shayne/Desktop/TechPrep/SecondView.xib
-cCompileXIB /Users/shayne/Desktop/TechPrep/FirstView.xib
-cProcessPCH /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch.gch TechPrep_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o /Users/shayne/Desktop/TechPrep/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o /Users/shayne/Desktop/TechPrep/Classes/TechPrepAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o /Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o /Users/shayne/Desktop/TechPrep/Classes/Helpers.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep normal i386
-cGenerateDSYMFile /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
-cTouch /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app
+cProcessInfoPlistFile /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist TechPrep-Info.plist
+cCompileXIB /Users/shayne/Sites/EssAndEss/TechPrep/MainWindow.xib
+cCompileXIB /Users/shayne/Sites/EssAndEss/TechPrep/SecondView.xib
+cCompileXIB /Users/shayne/Sites/EssAndEss/TechPrep/FirstView.xib
+cProcessPCH /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch.gch TechPrep_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o /Users/shayne/Sites/EssAndEss/TechPrep/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o /Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o /Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o /Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep normal i386
+cGenerateDSYMFile /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
+cTouch /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
 c000000004CC128950000000000000110
@@ -170,8 +170,131 @@ t1307392845
 s373
 i<UIKit/UIKit.h>
 
+N/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.h
+c000000004DED7F74000000000000012A
+t1307410292
+s298
+i<UIKit/UIKit.h>
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m
+c000000004DEE4A3A0000000000000BB7
+t1307462202
+s2999
+i"FirstViewController.h"
+i"Helpers.h"
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.h
+c000000004DED849A000000000000012E
+t1307411610
+s302
+i<Foundation/Foundation.h>
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m
+c000000004DEE513700000000000004B5
+t1307463991
+s1205
+i"Helpers.h"
+i<CommonCrypto/CommonDigest.h>
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.h
+c000000004DED7F3600000000000001EB
+t1307410230
+s491
+i<UIKit/UIKit.h>
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m
+c000000004DED7E970000000000000C53
+t1307410071
+s3155
+i"TechPrepAppDelegate.h"
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/FirstView.xib
+c000000004DED3B4D00000000000049D2
+t1307392845
+s18898
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/MainWindow.xib
+c000000004DED3D5600000000000072D7
+t1307393366
+s29399
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/SecondView.xib
+c000000004DED3B4D00000000000049D0
+t1307392845
+s18896
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/TechPrep_Prefix.pch
+c000000004DED3B4D00000000000000B9
+t1307392845
+s185
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app
+t1307463930
+s272
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM
+t1307463930
+s102
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/FirstView.nib
+t1307392850
+s1743
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist
+t1307392849
+s595
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/MainWindow.nib
+t1307393371
+s1930
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/PkgInfo
+t1307392849
+s8
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/SecondView.nib
+t1307392850
+s1742
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
+t1307463930
+s18948
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o
+t1307462356
+s44368
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o
+t1307463930
+s9480
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrep.LinkFileList
+c000000004DEE4AD20000000000000211
+t1307462354
+s529
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o
+t1307462356
+s54400
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o
+t1307462356
+s6304
+
+N/Users/shayne/Sites/EssAndEss/TechPrep/main.m
+c000000004DED3B4D0000000000000175
+t1307392845
+s373
+i<UIKit/UIKit.h>
+
 N/var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch.gch
 t1307392851
+s15453392
+
+N/var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch.gch
+t1307462355
 s15453392
 
 NTechPrep-Info.plist
@@ -181,7 +304,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies329154966#329154966#0(0"0(0#1#0"8614692800#0"0#
+lSLF07#2@18"Check dependencies329156730#329156730#0(0"0(0#1#0"8615640192#0"0#
 
 CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o /Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s329154966.554893
@@ -200,6 +323,23 @@ o/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m:49: warning: unuse
 o/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m:24: warning: unused variable 'modifiableRequest'
 lSLF07#2@68"Compile /Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m329154966#329154966#0(483"/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m: In function '-[FirstViewController webView:shouldStartLoadWithRequest:navigationType:]':/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m:50: warning: format not a string literal and no format arguments/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m:49: warning: unused variable 'url'/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m:24: warning: unused variable 'modifiableRequest'3(22@51"Format not a string literal and no format arguments329154966#151#126#0(6@60"/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m329154961#50#0#50#0#51"format not a string literal and no format arguments0(22@21"Unused variable 'url'329154966#277#96#0(6@60"/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m329154961#49#0#49#0#19"unused variable '*'0(22@35"Unused variable 'modifiableRequest'329154966#373#110#0(6@60"/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m329154961#24#0#24#0#19"unused variable '*'0(0#0#60"/Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m8613726496#1884"    cd /Users/shayne/Desktop/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch -c /Users/shayne/Desktop/TechPrep/Classes/FirstViewController.m -o /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o0#
 
+CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o /Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329155156.049609
+e329155156.215415
+r1
+xCompileC
+xbuild/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o
+x/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m: In function '-[FirstViewController webView:shouldStartLoadWithRequest:navigationType:]':
+o/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m:50: warning: format not a string literal and no format arguments
+o/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m:49: warning: unused variable 'url'
+o/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m:24: warning: unused variable 'modifiableRequest'
+lSLF07#2@76"Compile /Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m329155156#329155156#0(515"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m: In function '-[FirstViewController webView:shouldStartLoadWithRequest:navigationType:]':/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m:50: warning: format not a string literal and no format arguments/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m:49: warning: unused variable 'url'/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m:24: warning: unused variable 'modifiableRequest'3(22@51"Format not a string literal and no format arguments329155156#159#134#0(6@68"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m329155002#50#0#50#0#51"format not a string literal and no format arguments0(22@21"Unused variable 'url'329155156#293#104#0(6@68"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m329155002#49#0#49#0#19"unused variable '*'0(22@35"Unused variable 'modifiableRequest'329155156#397#118#0(6@68"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m329155002#24#0#24#0#19"unused variable '*'0(0#0#68"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m8603673600#1972"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch -c /Users/shayne/Sites/EssAndEss/TechPrep/Classes/FirstViewController.m -o /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/FirstViewController.o0#
+
 CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o /Users/shayne/Desktop/TechPrep/Classes/Helpers.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s329148912.133361
 e329148912.316434
@@ -212,6 +352,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@56"Compile /Users/shayne/Desktop/TechPrep/Classes/Helpers.m329148912#329148912#0(0"0(0#0#48"/Users/shayne/Desktop/TechPrep/Classes/Helpers.m8603548768#1860"    cd /Users/shayne/Desktop/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch -c /Users/shayne/Desktop/TechPrep/Classes/Helpers.m -o /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o0#
+
+CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o /Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329156730.696818
+e329156730.784713
+r1
+xCompileC
+xbuild/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o
+x/Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m329156730#329156730#0(0"0(0#0#56"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m8603438528#1948"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch -c /Users/shayne/Sites/EssAndEss/TechPrep/Classes/Helpers.m -o /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/Helpers.o0#
 
 CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o /Users/shayne/Desktop/TechPrep/Classes/TechPrepAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s329103073.087986
@@ -226,6 +379,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@68"Compile /Users/shayne/Desktop/TechPrep/Classes/TechPrepAppDelegate.m329103073#329103073#0(0"0(0#0#60"/Users/shayne/Desktop/TechPrep/Classes/TechPrepAppDelegate.m8613186336#1884"    cd /Users/shayne/Desktop/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch -c /Users/shayne/Desktop/TechPrep/Classes/TechPrepAppDelegate.m -o /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o0#
 
+CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o /Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329155155.951605
+e329155156.103194
+r1
+xCompileC
+xbuild/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o
+x/Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m329155155#329155156#0(0"0(0#0#68"/Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m8600597984#1972"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch -c /Users/shayne/Sites/EssAndEss/TechPrep/Classes/TechPrepAppDelegate.m -o /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrepAppDelegate.o0#
+
 CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o /Users/shayne/Desktop/TechPrep/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s329085651.564951
 e329085651.643806
@@ -238,6 +404,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Users/shayne/Desktop/TechPrep/main.m329085651#329085651#0(0"0(0#0#37"/Users/shayne/Desktop/TechPrep/main.m8604466784#1846"    cd /Users/shayne/Desktop/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch -c /Users/shayne/Desktop/TechPrep/main.m -o /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o0#
+
+CCompileC build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o /Users/shayne/Sites/EssAndEss/TechPrep/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s329155155.949789
+e329155156.049490
+r1
+xCompileC
+xbuild/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o
+x/Users/shayne/Sites/EssAndEss/TechPrep/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/shayne/Sites/EssAndEss/TechPrep/main.m329155155#329155156#0(0"0(0#0#45"/Users/shayne/Sites/EssAndEss/TechPrep/main.m8604161920#1934"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -include /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch -c /Users/shayne/Sites/EssAndEss/TechPrep/main.m -o /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/main.o0#
 
 CCompileXIB /Users/shayne/Desktop/TechPrep/FirstView.xib
 s329085650.189681
@@ -263,6 +442,15 @@ xCompileXIB
 x/Users/shayne/Desktop/TechPrep/SecondView.xib
 lSLF07#2@25"CompileXIB SecondView.xib329085649#329085650#0(0"0(0#0#45"/Users/shayne/Desktop/TechPrep/SecondView.xib8604467872#547"    cd /Users/shayne/Desktop/TechPrep    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/SecondView.nib /Users/shayne/Desktop/TechPrep/SecondView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
+CCompileXIB /Users/shayne/Sites/EssAndEss/TechPrep/FirstView.xib
+r0
+
+CCompileXIB /Users/shayne/Sites/EssAndEss/TechPrep/MainWindow.xib
+r0
+
+CCompileXIB /Users/shayne/Sites/EssAndEss/TechPrep/SecondView.xib
+r0
+
 CGenerateDSYMFile /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
 s329154966.775133
 e329154966.795587
@@ -271,6 +459,15 @@ xGenerateDSYMFile
 x/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM
 x/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
 lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/TechPrep.app.dSYM build/Debug-iphonesimulator/TechPrep.app/TechPrep329154966#329154966#0(0"0(0#0#80"/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep8614637600#362"    cd /Users/shayne/Desktop/TechPrep    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep -o /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM0#
+
+CGenerateDSYMFile /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
+s329156730.840218
+e329156730.886356
+r1
+xGenerateDSYMFile
+x/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM
+x/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/TechPrep.app.dSYM build/Debug-iphonesimulator/TechPrep.app/TechPrep329156730#329156730#0(0"0(0#0#88"/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep8612387264#386"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep -o /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app.dSYM0#
 
 CLd /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep normal i386
 s329154966.722369
@@ -282,6 +479,16 @@ xnormal
 xi386
 lSLF07#2@85"Link /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep329154966#329154966#0(0"0(0#0#0"8615005600#865"    cd /Users/shayne/Desktop/TechPrep    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -F/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -filelist /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrep.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep0#
 
+CLd /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep normal i386
+s329156730.784811
+e329156730.840088
+r1
+xLd
+x/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep
+xnormal
+xi386
+lSLF07#2@93"Link /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep329156730#329156730#0(0"0(0#0#0"8615646528#905"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -F/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -filelist /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/Objects-normal/i386/TechPrep.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/TechPrep0#
+
 CProcessInfoPlistFile /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist TechPrep-Info.plist
 s329085649.654276
 e329085649.657487
@@ -290,6 +497,9 @@ xProcessInfoPlistFile
 x/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist
 xTechPrep-Info.plist
 lSLF07#2@27"Process TechPrep-Info.plist329085649#329085649#0(0"0(0#0#50"/Users/shayne/Desktop/TechPrep/TechPrep-Info.plist8612945376#458"    cd /Users/shayne/Desktop/TechPrep    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TechPrep-Info.plist -genpkginfo /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app/Info.plist TechPrep-Info.plist
+r0
 
 CProcessPCH /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch.gch TechPrep_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s329085650.656695
@@ -304,6 +514,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile TechPrep_Prefix.pch329085650#329085651#0(0"0(0#0#50"/Users/shayne/Desktop/TechPrep/TechPrep_Prefix.pch8604491200#1745"    cd /Users/shayne/Desktop/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Desktop/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -c /Users/shayne/Desktop/TechPrep/TechPrep_Prefix.pch -o /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-dupxhtjfjxrxukadniocnzontecn/TechPrep_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch.gch TechPrep_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s329155154.397292
+e329155155.949572
+r1
+xProcessPCH
+x/var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch.gch
+xTechPrep_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile TechPrep_Prefix.pch329155154#329155155#0(0"0(0#0#58"/Users/shayne/Sites/EssAndEss/TechPrep/TechPrep_Prefix.pch5791471226833627136#1825"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-generated-files.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-own-target-headers.hmap -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-all-target-headers.hmap -iquote /Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/TechPrep-project-headers.hmap -F/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator -I/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/include -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources/i386 -I/Users/shayne/Sites/EssAndEss/TechPrep/build/TechPrep.build/Debug-iphonesimulator/TechPrep.build/DerivedSources -c /Users/shayne/Sites/EssAndEss/TechPrep/TechPrep_Prefix.pch -o /var/folders/jT/jTnRhCZaEumIRhjiT8Gv4U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TechPrep_Prefix-ealgevmnpsthqhesbctuijgvvzov/TechPrep_Prefix.pch.gch0#
+
 CTouch /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app
 s329154966.795707
 e329154966.798889
@@ -311,4 +534,12 @@ r1
 xTouch
 x/Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app
 lSLF07#2@77"Touch /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app329154966#329154966#0(0"0(0#0#0"8614565024#263"    cd /Users/shayne/Desktop/TechPrep    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/shayne/Desktop/TechPrep/build/Debug-iphonesimulator/TechPrep.app0#
+
+CTouch /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app
+s329156730.886452
+e329156730.889368
+r1
+xTouch
+x/Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app
+lSLF07#2@85"Touch /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app329156730#329156730#0(0"0(0#0#0"8611388544#279"    cd /Users/shayne/Sites/EssAndEss/TechPrep    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/shayne/Sites/EssAndEss/TechPrep/build/Debug-iphonesimulator/TechPrep.app0#
 

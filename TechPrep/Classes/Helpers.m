@@ -14,11 +14,12 @@
 
 + (NSString*)getExtraParams {
 	NSString* salt = @"234j5gakli2l3k4j5apiosdfj098yasdf"; // some random string
+	NSString* product = @"java"; // pass in URL
 	int epochInt = (int)[[NSDate date] timeIntervalSince1970];
 	NSString* epochString = [NSString stringWithFormat:@"%d", epochInt]; // pass in URL
-	NSString* encryptMe = [epochString stringByAppendingString: salt];
+	NSString* encryptMe = [NSString stringWithFormat:@"%@%@%@", epochString, salt, product];
 	NSString* encryptedString = [Helpers md5HexDigest:encryptMe]; // pass in URL
-	return [NSString stringWithFormat:@"encr=%@&timestamp=%@", encryptedString, epochString];
+	return [NSString stringWithFormat:@"encr=%@&timestamp=%@&product=%@", encryptedString, epochString, product];
 }
 
 + (NSString*)md5HexDigest:(NSString*)input {
