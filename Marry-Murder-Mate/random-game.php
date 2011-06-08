@@ -172,10 +172,25 @@ if ($user) {
       	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4de41719301eed24"></script>
       	<!-- AddThis Button END -->
 			</div>
+
+			<br/>
+			<br/>
 			
-			<!-- Begin Ad Call Tag - Do not Modify -->
-<iframe width='720' height='300' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21725?ad_size=720x300&adkey=934'></iframe>
-<!-- End of Ad Call Tag -->
+			<div id="ads">
+				<h1 style="text-align: center;">Advertisements</h1>
+
+				<!-- Begin Ad Call Tag - Do not Modify -->
+				<iframe width='160' height='600' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21908?ad_size=160x600&adkey=cbd'></iframe>
+				<!-- End of Ad Call Tag -->
+
+				<!-- Begin Ad Call Tag - Do not Modify -->
+				<iframe width='160' height='600' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21909?ad_size=160x600&adkey=cbd'></iframe>
+				<!-- End of Ad Call Tag -->	
+
+				<!-- Begin Ad Call Tag - Do not Modify -->
+	<iframe width='720' height='300' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21725?ad_size=720x300&adkey=934'></iframe>
+				<!-- End of Ad Call Tag -->
+			</div>
 			
     </div>
   </body>
