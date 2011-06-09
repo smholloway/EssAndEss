@@ -172,54 +172,16 @@ if ($user) {
       	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4de41719301eed24"></script>
       	<!-- AddThis Button END -->
 			</div>
-      
-      <br/>
 
-			<div id="extra">
-			The best facebook game ever! This game will cause no harm! It will not cause a heart attack, AIDS, or cancer (Mesothelioma, Leukemia, Carcinoma, Kaposi Sarcoma, Atypical Teratoid, Rhabdoid Tumor, etc). There's nothing bad except the risk associated with computers, mobile devices, or monitors. Pairstream Software is two highly educated web developers with skills including Photoshop, Illustrator, design, Ruby, Java, C# (C Sharp), C, C++, Python, PHP, CSS, HTML, JavaScript, Rails, Yii, Erlang, RESTful APIs, SQL, ORMs, and more. We like to do cool stuff!
-      
-			<a href="http://pairstream.com/random-game.php">Pairstream - Marry Murder Mate</a>
-			<a href="http://apps.facebook.com/marry-murder-mate/">Facebook - Marry Murder Mate</a>
-			</div>
-
-      <br/>
-      
-      <div id="sda-backwards">
-        <script type="text/javascript"><!--
-        google_ad_client = "ca-pub-2003017988956692";
-        /* wide banner */
-        google_ad_slot = "9559483834";
-        google_ad_width = 468;
-        google_ad_height = 60;
-        //-->
-        </script>
-        <script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
-        
-        <script type="text/javascript"><!--
-        google_ad_client = "ca-pub-2003017988956692";
-        /* large rectangle */
-        google_ad_slot = "6317581198";
-        google_ad_width = 336;
-        google_ad_height = 280;
-        //-->
-        </script>
-        <script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
-      
-        <script type="text/javascript"><!--
-        google_ad_client = "ca-pub-2003017988956692";
-        /* large rectangle */
-        google_ad_slot = "6317581198";
-        google_ad_width = 336;
-        google_ad_height = 280;
-        //-->
-        </script>
-        <script type="text/javascript"
-        src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
+			<br/>
+			<div class="ads" style="margin-left: -40px;">
+        <iframe src="ads.html" width="500" height="100" frameborder="0" scrolling="no" align ="left"></iframe>
+      </div>
+		  <div class="ads" style="position:absolute; top:0; right:0;">
+        <iframe src="ads_side.html" width="130" height="250" frameborder="0" scrolling="no" align ="left"></iframe>
+      </div>
+      <div class="ads" style="position:absolute; top:0; left:0;">
+        <iframe src="ads_side.html" width="130" height="250" frameborder="0" scrolling="no" align ="left"></iframe>
       </div>
     </div>
   </body>
