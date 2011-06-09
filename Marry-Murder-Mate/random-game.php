@@ -174,10 +174,15 @@ if ($user) {
 			</div>
 
 			<br/>
-			<div id="ads" style="margin-left: -4s0px;">
+			<div class="ads" style="margin-left: -40px;">
         <iframe src="ads.html" width="500" height="100" frameborder="0" scrolling="no" align ="left"></iframe>
       </div>
-			
+		  <div class="ads" style="position:absolute; top:0; right:0;">
+        <iframe src="ads_side.html" width="130" height="250" frameborder="0" scrolling="no" align ="left"></iframe>
+      </div>
+      <div class="ads" style="position:absolute; top:0; left:0;">
+        <iframe src="ads_side.html" width="130" height="250" frameborder="0" scrolling="no" align ="left"></iframe>
+      </div>
     </div>
   </body>
 </html>
