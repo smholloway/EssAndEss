@@ -174,23 +174,9 @@ if ($user) {
 			</div>
 
 			<br/>
-			<br/>
-			
-			<div id="ads">
-				<h1 style="text-align: center;">Advertisements</h1>
-
-				<!-- Begin Ad Call Tag - Do not Modify -->
-				<iframe width='160' height='600' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21908?ad_size=160x600&adkey=cbd'></iframe>
-				<!-- End of Ad Call Tag -->
-
-				<!-- Begin Ad Call Tag - Do not Modify -->
-				<iframe width='160' height='600' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21909?ad_size=160x600&adkey=cbd'></iframe>
-				<!-- End of Ad Call Tag -->	
-
-				<!-- Begin Ad Call Tag - Do not Modify -->
-	<iframe width='720' height='300' frameborder='no' framespacing='0' scrolling='no'  src='http://ads.lfstmedia.com/fbslot/slot21725?ad_size=720x300&adkey=934'></iframe>
-				<!-- End of Ad Call Tag -->
-			</div>
+			<div id="ads" style="margin-left: -4s0px;">
+        <iframe src="ads.html" width="500" height="100" frameborder="0" scrolling="no" align ="left"></iframe>
+      </div>
 			
     </div>
   </body>
