@@ -12,6 +12,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		266E5AF0139DA81D0083C994 /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 266E5AEF139DA81D0083C994 /* Helpers.m */; };
+		268B7C1813A17E4400F90A42 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268B7C1713A17E4400F90A42 /* SecondViewController.m */; };
 		28216C970DB411BC00E5133A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28216C960DB411BC00E5133A /* FirstViewController.m */; };
 		282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282CCBFD0DB6C98000C4EA27 /* SecondView.xib */; };
 		2840D7CE1179279E00D7F93C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2840D7CD1179279E00D7F93C /* FirstView.xib */; };
@@ -27,6 +28,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		266E5AEE139DA81D0083C994 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
 		266E5AEF139DA81D0083C994 /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		268B7C1613A17E4400F90A42 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		268B7C1713A17E4400F90A42 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		28216C950DB411BC00E5133A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		28216C960DB411BC00E5133A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		282CCBFD0DB6C98000C4EA27 /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 				1D3623250D0F684500981E51 /* TechPrepAppDelegate.m */,
 				266E5AEE139DA81D0083C994 /* Helpers.h */,
 				266E5AEF139DA81D0083C994 /* Helpers.m */,
+				268B7C1613A17E4400F90A42 /* SecondViewController.h */,
+				268B7C1713A17E4400F90A42 /* SecondViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				1D3623260D0F684500981E51 /* TechPrepAppDelegate.m in Sources */,
 				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
 				266E5AF0139DA81D0083C994 /* Helpers.m in Sources */,
+				268B7C1813A17E4400F90A42 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
