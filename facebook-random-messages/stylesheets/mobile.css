@@ -1,0 +1,114 @@
+body {
+  background: #FFFFFF;
+  color: #000000;
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  display: block;
+  min-width: 500px;
+  margin: 0px;
+  border: 0px;
+  outline: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+hr {
+  color: #E8E8E8;
+  width: 500px;
+  text-align: left; /*this will align it for IE*/
+  margin: 0 auto 0 0; /*this will align it left for Mozilla*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a {
+  cursor: pointer;
+  direction: ltr;
+  font-weight: bold;
+  color: #3B5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+#header {
+  background: #3B5998;
+  height: 42px;
+  position: relative;
+  top: auto;
+  left: auto;
+  display: block;
+  margin: 0;
+}
+
+#login {
+  padding: 5px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#main {
+  display: block;
+  position: relative;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.message {
+  width: 600px;
+}
+.message-picture {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 5px 10px 2px 5px;
+}
+.message-body {
+  float: left;
+  margin: 5px 2px 2px 5px;
+  line-height: 14px;
+  width: 388px;
+}
+
+.time_posted {
+  color: #999;
+}
+
+#replies {
+  margin: 2px 5px 2px 60px;
+  width: 398px;
+}
+.reply {
+  background: #EDEFF4;
+  margin: 2px;
+  width: 388px;
+}
+.reply-picture {
+  float: left;
+  height: 32px;
+  width: 32px;
+  margin: 4px 10px 4px 4px;
+}
+.reply-body {
+  float: left;
+  margin: 5px 2px 2px 5px;
+  line-height: 14px;
+  width: 328px;
+}
+.textarea-reply-comment {
+  height: 14px;
+  width: 374px;
+  margin: 4px 2px 2px 4px;
+}
+#reply-comment {
+  float: right;
+}
+.disclaimer {
+	display: none;
+  text-align: center;
+  padding: 2em;
+  color: #999;
+  width: 400px;
+}

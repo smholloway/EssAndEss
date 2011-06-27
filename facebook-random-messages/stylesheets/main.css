@@ -1,0 +1,140 @@
+body {
+  background: #FFFFFF;
+  color: #000000;
+  font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  display: block;
+  width: 228px;
+  margin: 0px;
+  border: 0px;
+  outline: 0px;
+  padding: 0px;
+  vertical-align: middle;
+	overflow-x: hidden;
+}
+hr {
+  color: #E8E8E8;
+  width: 216px;
+  text-align: left; /*this will align it for IE*/
+  margin: 0 5px 0; /*this will align it left for Mozilla*/
+}
+a {
+  cursor: pointer;
+  direction: ltr;
+  color: #3B5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+#header {
+  background: #3B5998;
+  height: 14px;
+  line-height: 14px;
+  position: relative;
+  top: auto;
+  left: auto;
+  display: block;
+  margin: 0px 0px 6px;
+  text-align: left;
+}
+
+#login {
+  padding: 5px;
+  color: #000;
+  font-weight: bold;
+  font-size: 11px;
+	background-color: #F2F2F2;
+	border-top: 1px solid #E2E2E2;
+	padding: 4px 5px 5px;
+}
+
+#main {
+  display: block;
+  position: relative;
+  padding: 1px;
+  margin-left: 2px;
+  width: 226px;
+}
+#notices {
+	width: 90%;
+	margin: 5px auto;
+	font-style: italic;
+}
+
+textarea#content {
+  width: 216px;
+}
+
+.message {
+  width: 220px;
+}
+.message-picture {
+  float: left;
+  height: 32px;
+  width: 32px;
+  margin: 5px 4px 2px 4px;
+}
+.message-picture img {
+  height: 32px;
+  width: 32px;
+}
+.message-body {
+  float: left;
+  margin: 5px 2px 2px 5px;
+  line-height: 14px;
+  width: 168px;
+}
+
+.time_posted {
+  color: #999;
+}
+
+#replies {
+  margin: 2px 5px 2px 40px;
+  width: 188px;
+}
+.reply {
+  background: #EDEFF4;
+  margin: 2px;
+  width: 178px;
+}
+.reply-picture {
+  float: left;
+  height: 24px;
+  width: 24px;
+  margin: 4px 6px 4px 4px;
+}
+.reply-picture img {
+  height: 24px;
+  width: 24px;
+}
+.reply-body {
+  float: left;
+  margin: 5px 2px 2px 5px;
+  line-height: 14px;
+  width: 128px;
+}
+.textarea-reply-comment {
+  height: 14px;
+  width: 164px;
+  margin: 4px 2px 2px 4px;
+}
+.textarea-reply-comment-tall {
+	height: 52px;
+  width: 164px;
+  margin: 4px 2px 2px 4px;	
+}
+#reply-comment {
+  float: right;
+}
+.disclaimer {
+	display: none;
+  text-align: center;
+  padding: 2px;
+  color: #999;
+  width: 226px;
+}

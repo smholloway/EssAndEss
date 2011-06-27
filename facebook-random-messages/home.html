@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    {% if referrer %}
+    <link href="/stylesheets/mobile.css" media="screen" rel="stylesheet" type="text/css">
+    {% else %}
+    <link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
+    {% endif %}
+    <title>Facebook Random Messages - Home</title>
+  </head>
+  <body>
+    <div id="header">
+      <div id="login">
+	    {% if referrer %}
+      <fb:login-button autologoutlink="true"></fb:login-button>
+			{% endif %}
+			Random Messages
+      </div> <!-- login -->
+
+      <div id="fb-root"></div>
+	  <!-- only load if not in an iframe from FB -->
+      <script>
+		if (top === self) {
+	        window.fbAsyncInit = function() {
+	          FB.init({appId: '{{ facebook_app_id }}', status: true, cookie: true,
+	                   xfbml: true});
+	          FB.Event.subscribe('{% if current_user %}auth.logout{% else %}auth.login{% endif %}', function(response) {
+	            window.location.reload();
+	          });
+	        };
+	        (function() {
+	          var e = document.createElement('script');
+	          e.type = 'text/javascript';
+	          e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+	          e.async = true;
+	          document.getElementById('fb-root').appendChild(e);
+	        }());
+		}
+      </script>
+    </div> <!-- header -->
+
+    <div id="main">
+			<div id="notices">
+    		{% if none_available %}
+        No new messages are available. Please add some of your own and check back again soon!
+    		{% endif %}
+
+				{% if limit %}
+        Usage limit hit. 5 new messages, 5 sent messages, and 60 replies per hour.
+    		{% endif %}
+			</div> <!-- notices -->
+    
+    <p>
+        <a href="new_message">Get New Message!</a> | 
+        <a href="sent_messages">My Sent Messages</a>
+    </p>
+    
+    <form action="/send" method="post">
+        <div>Enter a message to be sent to a random Facebook user:</div>
+        <div><textarea name="content" id="content" rows="3" cols="60"></textarea></div>
+        <div><input type="checkbox" name="hide" value="yes" checked> Hide my identity
+        <input type="hidden" name="redirect" value="/home">
+         <input type="submit" value="Send Message"></div>
+    </form>
+    
+    <hr>
+    
+    {% if not messages %}
+        No messages.
+    {% endif %}
+    
+    {% for message in messages %}
+    <div class="message">
+    <div class="message-picture">
+        {% if not message.hide_user %}
+              <a href="{{ message.user.profile_url }}"><img width="50" src="http://graph.facebook.com/{{ message.user.id }}/picture?type=square"/></a>
+        {% else %}
+            <a href="http://www.facebook.com/fb-rand-messages"><img width="50" src="http://graph.facebook.com//picture?type=square"/></a>
+        {% endif %}
+     </div> <!-- message-picture -->
+
+      <div class="message-body">
+            {% if not message.hide_user %}
+              <a href="{{ message.user.profile_url }}">{{ message.user.name|escape }}</a>
+            {% else %}
+              <a href="http://www.facebook.com/fb-rand-messages">Anonymous</a>
+            {% endif %}
+            <div class="random-message">{{ message.content|escape }}</div>
+            <div class="time_posted">{{ message.date|date:"F d, Y" }} at {{ message.date|date:"fa" }}</div>
+      </div> <!--  message-body -->
+    	<div style="clear:both"> </div>
+    </div> <!-- message -->
+    <div style="clear:both"> </div>
+        
+    <div id="replies">
+        {% for reply in message.replies %}
+      <div class="reply">
+        <div class="reply-picture">
+            {% if not reply.hide_user %}
+                  <a href="{{ reply.user.profile_url }}"><img width="32" src="http://graph.facebook.com/{{ reply.user.id }}/picture?type=square"/></a>
+            {% else %}
+                <a href="http://www.facebook.com/fb-rand-messages"><img width="32" src="http://graph.facebook.com//picture?type=square"/></a>
+            {% endif %}
+        </div> <!-- reply-picture -->
+
+        <div class="reply-body">
+              {% if not reply.hide_user %}
+                <a href="{{ reply.user.profile_url }}">{{ reply.user.name|escape }}</a>
+              {% else %}
+                <a href="http://www.facebook.com/fb-rand-messages">Anonymous</a>
+              {% endif %}
+                <div class="reply-message">{{ reply.content|escape }}</div>
+              <div class="time_posted">{{ reply.date|date:"F d, Y" }} at {{ reply.date|date:"fa" }}</div>
+        </div> <!-- reply-body -->
+        <div style="clear:both"> </div>
+      </div> <!-- reply -->
+      <div style="clear:both"> </div>
+        {% endfor %}
+        
+      <div class="reply">
+            <form action="/reply" method="post">
+                <input type="hidden" name="message_id" value="{{ message.key }}">
+                <input type="hidden" name="redirect" value="/home">
+          <div><textarea name="content" rows="3" cols="40" class="textarea-reply-comment"></textarea></div>
+            <div id="reply-comment">
+            <input type="checkbox" name="hide" value="yes" checked> Hide my identity
+            <input type="submit" value="Reply">
+          </div>
+          <div style="clear:both"> </div>
+          </form>
+      </div> <!-- reply -->
+    </div> <!-- replies -->
+    <hr>
+    {% endfor %}
+    </div> <!-- main -->
+	<div class="disclaimer">Disclaimer: This site is not in any way affiliated with Facebook.com</div>
+  </body>
+</html>
