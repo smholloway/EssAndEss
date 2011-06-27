@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	background: #fff;
+	color: #333;
+	font-family: 'Lucinda Grande', Monaco, sans-serif;
+	font-size: 16px;
+	line-height: 1.4em;
+}
+a {
+	color: #3B5998;
+	text-decoration: none;
+}
+a:hover, a:focus {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+h3 {
+	margin: 8px auto;
+}
+
+#site {
+	width: 960px;
+	min-height: 800px;
+	margin: 10px auto;
+	z-index: 10;
+}
+#header {
+	height: 50px;
+	line-height: 50px;
+	margin: 20px auto;
+	text-align: center;
+}
+#header h1 {
+	font-size: 48px;
+}
+#main {
+	margin: 10px auto;
+}
+#footer {
+	min-width: 960px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	font-size: 13px;
+	z-index: 1;
+}
+
+ul.nav {
+	list-style: none;
+}
+ul.nav li {
+  display: inline;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+ul.nav li a {
+  padding: 20px 20px;
+  text-decoration: none;
+  display: block;
+	font-weight: bold;
+	font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project {
+	margin: 16px;
+}
