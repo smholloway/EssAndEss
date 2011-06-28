@@ -112,3 +112,10 @@ a:hover {
   color: #999;
   width: 400px;
 }
+#ads {
+  position:absolute;
+  top:0;
+  right:0;
+  width:120px;
+  height:600px;
+}
