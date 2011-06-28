@@ -2,19 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    {% if referrer %}
-    <link href="/stylesheets/mobile.css" media="screen" rel="stylesheet" type="text/css">
-    {% else %}
     <link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css">
-    {% endif %}
     <title>Facebook Random Messages - My Sent Messages</title>
   </head>
   <body>
     <div id="header">
       <div id="login">
-		    {% if referrer %}
 	      <fb:login-button autologoutlink="true"></fb:login-button>
-				{% endif %}
+
       	Random Messages
       </div> <!-- login -->
 

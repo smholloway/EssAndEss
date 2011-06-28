@@ -113,7 +113,6 @@ class HomeHandler(BaseHandler):
         
         messages = self.get_inbox
         none_available = self.request.get('none_available', None) # for displaying no new messages alert
-        referrer = self.request.get('ref', None) # was the user referred to the site from elsewhere?
         limit = self.request.get('limit', None)
 
         path = os.path.join(os.path.dirname(__file__), "home.html")
@@ -121,7 +120,6 @@ class HomeHandler(BaseHandler):
                     facebook_app_id = FACEBOOK_APP_ID,
                     messages = messages,
                     none_available = none_available,
-                    referrer = referrer,
                     limit = limit)
         self.response.out.write(template.render(path, args))
 
