@@ -1,0 +1,18 @@
+content custombutton chrome/
+style chrome://global/content/customizeToolbar.xul chrome://custombutton/content/button.css
+
+# Firefox
+overlay	chrome://browser/content/browser.xul chrome://custombutton/content/button.xul
+
+# Thunderbird mail
+overlay	chrome://messenger/content/messenger.xul chrome://custombutton/content/button.xul
+
+# Thunderbird compose
+overlay	chrome://messenger/content/messengercompose/messengercompose.xul chrome://custombutton/content/button.xul
+
+# Thunderbird address book
+overlay	chrome://messenger/content/addressbook/addressbook.xul chrome://custombutton/content/button.xul
+
+# Sunbird
+overlay	chrome://calendar/content/calendar.xul chrome://custombutton/content/button.xul
+

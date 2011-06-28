@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css"
+  href="chrome://custombutton/content/button.css"?>
+
+<!DOCTYPE overlay >
+<overlay id="custombutton-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/javascript"
+  src="chrome://custombutton/content/button.js"/>
+
+<toolbox id="main-toolbox">
+  <toolbar id="main-toolbar"
+    toolbarname="test"
+    context="toolbar-context-menu" 
+    hidden="false">
+    <toolbaritem id="custom-button-1" />
+    <toolbaritem id="custom-button-2" />
+  </toolbar>
+</toolbox>
+
+<toolbaritem id="custom-button-1"
+  flex="1"
+  align="center"
+  label="Custom">
+  <label value="Test 1"/>
+</toolbaritem>
+
+<toolbaritem id="custom-button-2"
+  flex="1"
+  align="center"
+  label="Custom">
+  <label value="Test 2"/>
+</toolbaritem>
+
+</overlay>
+

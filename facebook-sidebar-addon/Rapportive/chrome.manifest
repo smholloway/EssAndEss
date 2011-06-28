@@ -1,0 +1,2 @@
+content   rapportive             content/
+overlay   chrome://browser/content/browser.xul  chrome://rapportive/content/script-compiler-overlay.xul
