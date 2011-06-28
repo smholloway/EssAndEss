@@ -4,23 +4,25 @@ body {
   font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
   font-size: 11px;
   display: block;
-  width: 228px;
+  min-width: 500px;
   margin: 0px;
   border: 0px;
   outline: 0px;
   padding: 0px;
-  vertical-align: middle;
-	overflow-x: hidden;
+  vertical-align: baseline;
 }
 hr {
   color: #E8E8E8;
-  width: 216px;
+  width: 500px;
   text-align: left; /*this will align it for IE*/
-  margin: 0 5px 0; /*this will align it left for Mozilla*/
+  margin: 0 auto 0 0; /*this will align it left for Mozilla*/
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 a {
   cursor: pointer;
   direction: ltr;
+  font-weight: bold;
   color: #3B5998;
   cursor: pointer;
   text-decoration: none;
@@ -32,61 +34,42 @@ a:hover {
 
 #header {
   background: #3B5998;
-  height: 14px;
-  line-height: 14px;
+  height: 42px;
   position: relative;
   top: auto;
   left: auto;
   display: block;
-  margin: 0px 0px 6px;
-  text-align: left;
+  margin: 0;
 }
 
 #login {
   padding: 5px;
-  color: #000;
+  color: #FFF;
   font-weight: bold;
-  font-size: 11px;
-	background-color: #F2F2F2;
-	border-top: 1px solid #E2E2E2;
-	padding: 4px 5px 5px;
+  font-size: 1.5em;
 }
 
 #main {
   display: block;
   position: relative;
-  padding: 1px;
-  margin-left: 2px;
-  width: 226px;
-}
-#notices {
-	width: 90%;
-	margin: 5px auto;
-	font-style: italic;
-}
-
-textarea#content {
-  width: 216px;
+  padding: 5px;
+  margin-left: 10px;
 }
 
 .message {
-  width: 220px;
+  width: 600px;
 }
 .message-picture {
   float: left;
-  height: 32px;
-  width: 32px;
-  margin: 5px 4px 2px 4px;
-}
-.message-picture img {
-  height: 32px;
-  width: 32px;
+  height: 50px;
+  width: 50px;
+  margin: 5px 10px 2px 5px;
 }
 .message-body {
   float: left;
   margin: 5px 2px 2px 5px;
   line-height: 14px;
-  width: 168px;
+  width: 388px;
 }
 
 .time_posted {
@@ -94,39 +77,30 @@ textarea#content {
 }
 
 #replies {
-  margin: 2px 5px 2px 40px;
-  width: 188px;
+  margin: 2px 5px 2px 60px;
+  width: 398px;
 }
 .reply {
   background: #EDEFF4;
   margin: 2px;
-  width: 178px;
+  width: 388px;
 }
 .reply-picture {
   float: left;
-  height: 24px;
-  width: 24px;
-  margin: 4px 6px 4px 4px;
-}
-.reply-picture img {
-  height: 24px;
-  width: 24px;
+  height: 32px;
+  width: 32px;
+  margin: 4px 10px 4px 4px;
 }
 .reply-body {
   float: left;
   margin: 5px 2px 2px 5px;
   line-height: 14px;
-  width: 128px;
+  width: 328px;
 }
 .textarea-reply-comment {
   height: 14px;
-  width: 164px;
+  width: 374px;
   margin: 4px 2px 2px 4px;
-}
-.textarea-reply-comment-tall {
-	height: 52px;
-  width: 164px;
-  margin: 4px 2px 2px 4px;	
 }
 #reply-comment {
   float: right;
@@ -134,7 +108,7 @@ textarea#content {
 .disclaimer {
 	display: none;
   text-align: center;
-  padding: 2px;
+  padding: 2em;
   color: #999;
-  width: 226px;
+  width: 400px;
 }

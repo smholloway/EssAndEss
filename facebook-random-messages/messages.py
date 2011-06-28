@@ -16,10 +16,10 @@
 
 """A barebones AppEngine application that uses Facebook for login."""
 
-FACEBOOK_APP_ID = "128787447183883" # appengine
-FACEBOOK_APP_SECRET = "135a9391e3e17e03373ec4aa5a6f8e93" # appengine
-#FACEBOOK_APP_ID = "186405271371324" # localhost
-#FACEBOOK_APP_SECRET = "cc63ad3aafcc6a098977b3fc510a19cc" # localhost
+#FACEBOOK_APP_ID = "128787447183883" # appengine
+#FACEBOOK_APP_SECRET = "135a9391e3e17e03373ec4aa5a6f8e93" # appengine
+FACEBOOK_APP_ID = "186405271371324" # localhost
+FACEBOOK_APP_SECRET = "9d2bf8d53692f539aa4d4a7da2d0c180" # localhost
 
 import facebook
 import os.path
