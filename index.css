@@ -3,7 +3,7 @@
 	padding: 0;
 }
 html, body {
-	height: 098%;
+	height: 99%;
 	background: #fff;
 	color: #333;
 	font-family: 'Lucinda Grande', Monaco, sans-serif;
@@ -55,7 +55,7 @@ h3 {
 }
 .push {
 	overflow: auto;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 #footer {
 	position: relative;
