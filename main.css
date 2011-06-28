@@ -3,28 +3,43 @@
 	padding: 0;
 }
 html, body {
+	height: 098%;
 	background: #fff;
 	color: #333;
 	font-family: 'Lucinda Grande', Monaco, sans-serif;
 	font-size: 16px;
-	line-height: 1.4em;
+}
+body:before {
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;
 }
 a {
 	color: #3B5998;
 	text-decoration: none;
 }
-a:hover, a:focus {
-  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+a:hover, a:focus, a:active {
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	cursor: pointer;
+} 
+strong {
+	font-weight: bold;
+}
+h2 {
+	margin: 8 auto;
 }
 h3 {
-	margin: 8px auto;
+	margin: 0 auto 8px;
+	color: #3B5998;
 }
 
 #site {
 	width: 960px;
-	min-height: 800px;
-	margin: 10px auto;
-	z-index: 10;
+	min-height: 100%;
+	margin: 0 auto;
+	line-height: 1.4em;
 }
 #header {
 	height: 50px;
@@ -38,14 +53,18 @@ h3 {
 #main {
 	margin: 10px auto;
 }
+.push {
+	overflow: auto;
+	padding-bottom: 20px;
+}
 #footer {
-	min-width: 960px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+	position: relative;
+	margin: -20px auto 0;
+	height: 20px;
+	clear: both;
+	width: 960px;
 	text-align: center;
 	font-size: 13px;
-	z-index: 1;
 }
 
 ul.nav {
@@ -71,5 +90,14 @@ ul.nav li a {
 }
 
 .project {
-	margin: 16px;
+	padding: 12px;
+	border-radius: 4px;
+}
+.project:hover, .project:focus, .project:active {
+	background: #eee;
+	cursor: pointer;
+}
+.project a {
+	display: block;
+	color: #333;
 }
