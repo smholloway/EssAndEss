@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript"?>
+      $(document).ready(function(){
+          $('#status').keyup(function(){ 
+            var limit = $(this).attr('maxlength');
+            ($(this).val().length < limit) ? 
+              $('.charsLeft').html(limit-$(this).val().length) : 
+                $(this).val($(this).val().substr(0,limit)) + 
+                  $('.charsLeft').html('<span style="color: #000">0</SPAN>');});
+    });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22438762-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    
+    <form action="/" method="post">
+      <div>
+        <span style="float: left">Send a tweet anonymously!</span><br />
+      </div>
+      <div>
+        <textarea style="width: 500px; height: 50px" id="status" name="status" maxlength="140"></textarea>
+      </div>
+      <div style="text-align: left; color: #000; font-size: 22px;">
+        <input type="submit" value="Submit" />
+        <span class="charsLeft">140</span> chars remaining
+      </div>
+    </form>
+    
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 30,
+      interval: 6000,
+      width: 'auto',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#d6d6d6',
+          color: '#000000'
+        },
+        tweets: {
+          background: '#ffffff',
+          color: '#000000',
+          links: '#000000'
+        }
+      },
+      features: {
+        scrollbar: true,
+        loop: false,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        behavior: 'all'
+      }
+    }).render().setUser('Hide_And_Tweet').start();
+    </script>
+  </body>
+</html>
